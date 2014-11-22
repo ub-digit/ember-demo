@@ -1,0 +1,28 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="javascript:void(0)">Demo</a>
+  </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <ul class="nav navbar-nav">
+    <li>
+      {{#link-to 'responser'}}Responsive Demo
+      <div class="active-indicator">
+        <div class="arrow">
+          <div class="top"></div>
+          <div class="bottom"></div>
+        </div>
+      </div>
+      {{/link-to}}
+    </li>
+    <li>
+      {{#link-to 'backender'}}Backend Demo    
+      <div class="active-indicator">
+        <div class="arrow">
+          <div class="top"></div>
+          <div class="bottom"></div>
+        </div>
+      </div>
+      {{/link-to}}
+    </li>
+  </ul>
+</nav>

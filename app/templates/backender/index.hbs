@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Summary</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each item in model}}
+      <tr>
+        <td>{{#link-to 'backender.show' item.id}}{{item.title}}{{/link-to}}</td>
+        <td>{{item.summary}}</td>
+        <td>{{item.url}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

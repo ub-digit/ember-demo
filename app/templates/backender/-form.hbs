@@ -1,0 +1,25 @@
+<h1>Add item</h1>
+{{#if error}}
+  <div class="alert alert-danger">
+    Unable to save
+  </div>
+{{/if}}
+<div class="form-group">
+  <label>Title</label>
+  {{input type="text" classBinding=":form-control" value=model.title}}
+</div>
+<div class="form-group">
+  <label>Summary</label>
+  {{input type="text" classBinding=":form-control" value=model.summary}}
+</div>
+<div class="form-group">
+  <label>Body (markdown)</label>
+  {{textarea classBinding=":form-control" cols="60" rows="10" value=model.body}}
+</div>
+<div class="form-group">
+  <label>URL</label>
+  {{input type="text" classBinding=":form-control" value=model.url}}
+</div>
+<div class="form-group">
+  <button class="btn btn-primary" {{action 'saveItem' model}}>Save</button>
+</div>
