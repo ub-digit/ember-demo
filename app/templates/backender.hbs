@@ -1,9 +1,9 @@
 <ul class="nav nav-tabs">
   {{#link-to "backender.index" tagName="li"}}
-    <a {{bind-attr href="view.href"}}>List</a>
+    <a {{bind-attr href="view.href"}}>{{t "backend.action.list"}}</a>
   {{/link-to}}
   {{#link-to "backender.new" tagName="li"}}
-    <a {{bind-attr href="view.href"}}>Create</a>
+    <a {{bind-attr href="view.href"}}>{{t "backend.action.create"}}</a>
 {{/link-to}}
 </ul>
 {{outlet}}

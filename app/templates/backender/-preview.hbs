@@ -1,4 +1,9 @@
-<h2>Preview: {{model.title}}</h2>
+<h2>{{t "backend.form.header.preview"}}: {{model.title}}</h2>
 <p class="lead">{{model.summary}}</p>
 <div>{{markdown-text model.body}}</div>
+{{#if model.url}}
+<p>
+  <a {{bind-attr href=model.url}}>{{t "backend.item.link"}}</a>
+</p>
+{{/if}}
   
