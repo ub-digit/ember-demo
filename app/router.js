@@ -6,7 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-    this.resource('indexbouncer', function() {});
+    this.route('indexbouncer');
     this.resource('responser', function() {
 	this.route('index', {path: '/'});
     });
@@ -16,6 +16,7 @@ Router.map(function() {
 	this.route('new');
 	this.route('edit', {path: '/edit/:id'});
     });
+    this.route('external');
 });
 
 export default Router;

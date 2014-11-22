@@ -3,8 +3,8 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
     langToggler: true,
     translationInternal: function() {
-	return Ember.I18n.translationInternal;
-    }.property(),
+	return !this.get('externalParams.lang');
+    }.property('externalParams.lang'),
     actions: {
 	toggleLang: function() {
 	    var that = this;

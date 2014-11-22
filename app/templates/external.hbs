@@ -1,0 +1,19 @@
+<h1>{{t "external.header"}}</h1>
+<div class="col-xs-12 col-md-6">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>{{t "external.key"}}</th>
+        <th>{{t "external.value"}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each param in params}}
+        <tr>
+          <td>{{param.key}}</td>
+          <td>{{param.value}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

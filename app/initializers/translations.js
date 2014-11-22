@@ -11,6 +11,7 @@ var TRANSLATIONS = {
 	menu: {
 	    responsive_demo: 'Responsive Demo',
 	    backend_demo: 'API Service Demo',
+	    external_params: 'External parameters',
 	    other_lang: 'Svenska'
 	},
 	backend: {
@@ -37,6 +38,11 @@ var TRANSLATIONS = {
 		save: 'Save',
 		save_error: 'Unable to save'
 	    }
+	},
+	external: {
+	    header: 'External parametrars',
+	    key: 'Key',
+	    value: 'Value'
 	}
     },
     sv: {
@@ -48,6 +54,7 @@ var TRANSLATIONS = {
 	menu: {
 	    responsive_demo: 'Demo av Responsivitet',
 	    backend_demo: 'Demo mot Tjänste-API',
+	    external_params: 'Externa parametrar',
 	    other_lang: 'English'
 	},
 	backend: {
@@ -74,6 +81,11 @@ var TRANSLATIONS = {
 		save: 'Spara',
 		save_error: 'Kunde inte spara'
 	    }
+	},
+	external: {
+	    header: 'Externa parametrar',
+	    key: 'Nyckel',
+	    value: 'Värde'
 	}
     }
 };
@@ -86,7 +98,6 @@ var i18nInitializer = {
 	var lang = rootElement.data().lang;
 	if(!lang) {
 	    lang = 'en';
-	    Ember.I18n.translationInternal = true;
 	}
 	var translation = Ember.$.extend(true, {}, TRANSLATIONS)[lang];
 	Ember.I18n.translations = translation;
