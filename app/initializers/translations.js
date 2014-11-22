@@ -40,7 +40,7 @@ var TRANSLATIONS = {
 	    }
 	},
 	external: {
-	    header: 'External parametrars',
+	    header: 'External parameters',
 	    key: 'Key',
 	    value: 'Value'
 	}
