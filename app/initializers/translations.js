@@ -3,9 +3,15 @@ import ENV from '../config/environment';
 
 var TRANSLATIONS = {
     en: {
+	other_lang: 'sv',
+	main: {
+	    title: "Ember Demo Application",
+	    description: "Write description text here"
+	},
 	menu: {
 	    responsive_demo: 'Responsive Demo',
-	    backend_demo: 'API Service Demo'
+	    backend_demo: 'API Service Demo',
+	    other_lang: 'Svenska'
 	},
 	backend: {
 	    action: {
@@ -32,9 +38,15 @@ var TRANSLATIONS = {
 	}
     },
     sv: {
+	other_lang: 'en',
+	main: {
+	    title: "Ember Demo-applikation",
+	    description: "Skriv beskrivning här"
+	},
 	menu: {
 	    responsive_demo: 'Demo av Responsivitet',
-	    backend_demo: 'Demo mot Tjänste-API'
+	    backend_demo: 'Demo mot Tjänste-API',
+	    other_lang: 'English'
 	},
 	backend: {
 	    action: {
@@ -70,8 +82,11 @@ var i18nInitializer = {
 	var lang = rootElement.data().lang;
 	if(!lang) {
 	    lang = 'en';
+	    Ember.I18n.translationInternal = true;
 	}
-	Ember.I18n.translations = TRANSLATIONS[lang];
+	var translation = Ember.$.extend(true, {}, TRANSLATIONS)[lang];
+	Ember.I18n.translations = translation;
+	Ember.I18n.allTranslations = TRANSLATIONS;
 	Ember.FEATURES.I18N_TRANSLATE_HELPER_SPAN = false;
 	Ember.ENV.I18N_COMPILE_WITHOUT_HANDLEBARS = true;
     }

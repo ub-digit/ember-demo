@@ -15,7 +15,7 @@
       {{/link-to}}
     </li>
     <li>
-      {{#link-to 'backender'}}Backend Demo    
+      {{#link-to 'backender'}}{{t "menu.backend_demo"}}
       <div class="active-indicator">
         <div class="arrow">
           <div class="top"></div>
@@ -25,4 +25,11 @@
       {{/link-to}}
     </li>
   </ul>
+  {{#if translationInternal}}
+  <ul class="nav navbar-nav navbar-right">
+    <li>
+      <button class="btn btn-default navbar-btn navbar-btn-right" {{action "toggleLang"}}>{{t "menu.other_lang"}}</button>
+    </li>
+  </ul>
+  {{/if}}
 </nav>
