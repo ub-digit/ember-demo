@@ -34,7 +34,8 @@ var TRANSLATIONS = {
 		    preview: 'Preview'
 		},
 		body: 'Content (markdown)',
-		save: 'Save'
+		save: 'Save',
+		save_error: 'Unable to save'
 	    }
 	}
     },
@@ -70,7 +71,8 @@ var TRANSLATIONS = {
 		    preview: 'Förhandsgranskning'
 		},
 		body: 'Innehåll (markdown)',
-		save: 'Spara'
+		save: 'Spara',
+		save_error: 'Kunde inte spara'
 	    }
 	}
     }
