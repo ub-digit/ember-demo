@@ -18,7 +18,8 @@ var TRANSLATIONS = {
 		list: 'List posts',
 		create: 'Create post',
 		edit: 'Edit post',
-		delete: 'Radera post'
+		delete: 'Delete post',
+		confirm_delete_msg: 'Are you sure you want to delete the post?'
 	    },
 	    item: {
 		title: 'Title',
@@ -53,7 +54,8 @@ var TRANSLATIONS = {
 		list: 'Lista poster',
 		create: 'Skapa post',
 		edit: 'Redigera post',
-		delete: 'Radera post'
+		delete: 'Radera post',
+		confirm_delete_msg: 'Är du säker på att du vill radera posten?'
 	    },
 	    item: {
 		title: 'Titel',

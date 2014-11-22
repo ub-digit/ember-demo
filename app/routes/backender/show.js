@@ -6,7 +6,7 @@ export default Ember.Route.extend({
     },
     actions: {
 	removeItem: function(item) {
-	    if(confirm('Are you sure?')) {
+	    if(confirm(Ember.I18n.t('backend.action.confirm_delete_msg'))) {
 		var that = this;
 		this.store.destroy('demo', item.id).then(function() {
 		    that.transitionTo('backender.index');
