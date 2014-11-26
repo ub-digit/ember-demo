@@ -26,7 +26,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
-    ENV.APP.serviceURL = '<url-to-api-server>';
+    ENV.APP.serviceURL = 'http://130.241.35.100:4002/demos/';
   }
 
   if (environment === 'test') {
@@ -42,7 +42,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.APP.serviceURL = '<url-to-api-server>';
+    ENV.APP.serviceURL = 'http://130.241.35.100:4002/demos/';
   }
 
   return ENV;
